@@ -14,18 +14,21 @@
                 Impar = Introducao(Impar);
                 //chama o método diamante
                 Diamante();
-                //opção de continuar
-                Console.WriteLine("Deseja continuar? (S/N): ");
-                
+                //chama o método continuar
+                continuar();
+
                 Console.ReadLine();
             }
         }
         static bool Introducao(bool Impar)
         {
             //cabeçalho
-            Console.WriteLine("Bem vindo");
-            Console.WriteLine("Vamos desenhar o seu diamante: ");
-            Console.WriteLine("Digite o tamanho do diamante: ");
+            Console.WriteLine("-------------Bem vindo-------------");
+            Console.WriteLine("************************************");
+            Console.WriteLine(" - Vamos desenhar o seu diamante: :)(: ");
+            Console.WriteLine("************************************");
+            Console.WriteLine(" - Digite o tamanho do diamante: ");
+            Console.WriteLine("------------------------------------");
 
             //par ou impar/tamanho
             decimal tamanho = Convert.ToDecimal(Console.ReadLine());
@@ -43,7 +46,26 @@
         }
         static void Diamante()
         {
+            //desenha o diamante
+            Console.WriteLine("    *");
+            Console.WriteLine("   * *");
+            Console.WriteLine("  * * *");
+            Console.WriteLine(" * * * *");
+            Console.WriteLine("  * * *");
+            Console.WriteLine("   * *");
+            Console.WriteLine("    * ");
+            Console.WriteLine("------------------------------------");
 
+        }
+        static void continuar()
+        {
+            //opção de continuar
+            Console.WriteLine("Deseja continuar? (S/N): ");
+            string continuar = Console.ReadLine();
+            if (continuar.ToUpper() != "S")
+            {
+                Environment.Exit(0);
+            }
         }
     }
 }

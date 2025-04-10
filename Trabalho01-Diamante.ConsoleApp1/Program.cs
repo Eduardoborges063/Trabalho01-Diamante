@@ -9,11 +9,9 @@
                 Console.Clear();
                 bool Impar = false;
                 bool par = false;
-                //chama o método introdução 
+
                 int linhas = Introducao();
-                //chama o método diamante
                 Diamante(linhas);
-                //chama o método continuar
                 continuar();
 
                 Console.ReadLine();

@@ -13,8 +13,6 @@
                 int linhas = Introducao();
                 Diamante(linhas);
                 continuar();
-
-                Console.ReadLine();
             }
         }
         static int Introducao()
